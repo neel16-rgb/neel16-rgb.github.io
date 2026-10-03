@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neelabh Shyam | Analytics and Machine Learning</title>
+<meta name="description" content="Portfolio of Neelabh Shyam, Rutgers student in Business Analytics and Data Science.">
+<style>
+  :root {
+    --bg: #fafaf8; --card: #ffffff; --text: #1c1c1c; --muted: #5d5d5d;
+    --accent: #cc0033; --border: #e4e4df;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121212; --card: #1b1b1b; --text: #f0f0ee; --muted: #a8a8a4; --accent: #ff4d6d; --border: #2c2c2c; }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--border); z-index: 10; }
+  nav .inner { max-width: 880px; margin: 0 auto; padding: 14px 20px; display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+  nav .brand { font-weight: 700; color: var(--text); margin-right: auto; }
+  nav a { color: var(--muted); font-size: 0.95rem; }
+  main { max-width: 880px; margin: 0 auto; padding: 0 20px 60px; }
+  section { padding-top: 56px; }
+  h1 { font-size: clamp(2rem, 5vw, 2.8rem); margin: 0 0 12px; line-height: 1.15; }
+  h2 { font-size: 1.4rem; margin: 0 0 20px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); display: inline-block; }
+  .hero { padding-top: 72px; }
+  .tagline { font-size: 1.2rem; color: var(--muted); max-width: 680px; margin: 0 0 24px; }
+  .btn { display: inline-block; padding: 10px 18px; border-radius: 8px; border: 1px solid var(--accent);
+    font-weight: 600; margin-right: 10px; margin-bottom: 8px; }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn:hover { text-decoration: none; opacity: 0.88; }
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .card h3 { margin: 0 0 10px; font-size: 1.05rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag { font-size: 0.85rem; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+  .projects { display: grid; gap: 18px; }
+  .project h3 { margin: 0 0 6px; }
+  .project p { margin: 0 0 12px; color: var(--muted); }
+  .project .stack { font-size: 0.85rem; color: var(--muted); margin-bottom: 12px; }
+  .project .links a { margin-right: 16px; font-weight: 600; font-size: 0.95rem; }
+  footer { text-align: center; color: var(--muted); font-size: 0.9rem; padding: 30px 20px; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <span class="brand">Neelabh Shyam</span>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+
+  <section class="hero" id="about">
+    <h1>Hi, I'm Neelabh Shyam.</h1>
+    <p class="tagline">I'm a Rutgers Business Analytics and Data Science student who builds machine learning models and analytics tools that turn messy data into clear business decisions.</p>
+    <a class="btn primary" href="#projects">View projects</a>
+    <a class="btn" href="https://linkedin.com/in/neelabhshyam/">LinkedIn</a>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Programming</h3>
+        <div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Java</span><span class="tag">HTML/CSS</span></div>
+      </div>
+      <div class="card">
+        <h3>Data and Machine Learning</h3>
+        <div class="tags"><span class="tag">PyTorch</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Computer Vision</span><span class="tag">NLP</span><span class="tag">Statistical Modeling</span></div>
+      </div>
+      <div class="card">
+        <h3>Analytics and BI</h3>
+        <div class="tags"><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Excel</span><span class="tag">ETL Pipelines</span></div>
+      </div>
+      <div class="card">
+        <h3>Business</h3>
+        <div class="tags"><span class="tag">Process Improvement (LEAN)</span><span class="tag">Economics</span><span class="tag">Research and Writing</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <div class="card project">
+        <h3>Quantum Computing Commercial Viability White Paper</h3>
+        <p>Co-authored white paper for Rutgers Consulting Group assessing when quantum computing becomes commercially viable, covering hardware and software maturity, industry use cases in finance, healthcare, supply chain, and cybersecurity, and adoption costs and risks for enterprises.</p>
+        <div class="stack">Research, Market Analysis, Emerging Tech, Strategy | Rutgers Consulting Group</div>
+        <div class="links"><a href="quantum-computing-white-paper.pdf">Read the white paper (PDF)</a></div>
+      </div>
+
+      <div class="card project">
+        <h3>Rental Listing Demand Prediction</h3>
+        <p>Predicts how many renter inquiries a Bengaluru listing receives in its first 3 days, using 28.9K NoBroker listings. Merged listing, photo, and interaction data, engineered features, and compared Linear, Lasso, and Random Forest regressors (best RMSE of 1.66 inquiries).</p>
+        <div class="stack">Python, Pandas, scikit-learn, Seaborn | Machine Learning</div>
+        <div class="links"><a href="https://github.com/YOUR-USERNAME/YOUR-REPO">View code on GitHub</a></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Open to Summer 2027 internships in analytics, data science, and machine learning.</p>
+    <a class="btn primary" href="mailto:ns1679@scarletmail.rutgers.edu">ns1679@scarletmail.rutgers.edu</a>
+    <a class="btn" href="https://linkedin.com/in/neelabhshyam/">LinkedIn</a>
+  </section>
+
+</main>
+
+<footer>&copy; 2026 Neelabh Shyam</footer>
+
+</body>
+</html>
